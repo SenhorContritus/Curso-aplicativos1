@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    font-family: Segoe UI;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
+@media(min-width: 768px){
+
+    aside{
+        background-color: darksalmon;
+        width: 11%;
+        height: 100%;
+  
+    }
+    h1{
+        
+        font-size: 32px;
+        color: aliceblue; 
+        
+    }
+
+    h2{
+        color: rgb(53, 53, 53);
+        font-size: 14px;
+    }
+
+    #divP{
+        margin: 6%;
+    }
+    #divProHead{
+        width: 94%;
+        background-color: rgb(196, 126, 103);
+        height: 4%;
+        align-content: center;
+        padding-left: 6%;
+
+    }
+    #divProContent{
+        margin: 6%;
+
+    }
+
+}
