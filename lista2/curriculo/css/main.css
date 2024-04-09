@@ -2,72 +2,75 @@
     margin: 0%;
     font-family: Segoe UI;
 }
-body{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
-aside{
-    background-color: darksalmon;
-    width: 13%;
-    height: 100%;
-    color: aliceblue;  
-}
-main{
-    overflow-y: scroll;
-    width: 87%;
-    padding: 2%;
-}
-h1{
-    
-    font-size: 32px;
-    color: aliceblue; 
-    
+@media(min-weight: 768px){
+    body{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    aside{
+        background-color: darksalmon;
+        width: 13%;
+        height: 100%;
+        color: aliceblue;  
+    }
+    main{
+        overflow-y: scroll;
+        width: 87%;
+        padding: 2%;
+    }
+    h1{
+        
+        font-size: 32px;
+        color: aliceblue; 
+        
+    }
+
+    h2{
+        color: rgb(53, 53, 53);
+        font-size: 14px;
+    }
+    h3{
+        color: rgb(253, 237, 237);
+
+    }
+    h4{
+        margin-top: 2%
+    }
+    .divHead{
+        width: 94%;
+        background-color: rgb(196, 126, 103);
+        height: 4%;
+        align-content: center;
+        padding-left: 6%;
+        color: rgb(209, 209, 209);
+
+    }
+    #divPicture{
+        margin: 6%;
+    }
+    #divProfileContent{
+        margin: 6%;
+
+    }
+    #divSkillsContent{
+        margin:6%;
+    }
+    progress{
+        width: 100%;
+        height: 1vh;
+        margin-top: 5%;
+        border-radius: 0%;
+    }
+    progress::-webkit-progress-bar{
+        background: rgb(196, 126, 103) ;
+
+    }
+    progress::-webkit-progress-value{
+        background: white;
+    }
 }
 
-h2{
-    color: rgb(53, 53, 53);
-    font-size: 14px;
-}
-h3{
-    color: rgb(253, 237, 237);
-
-}
-h4{
-    margin-top: 2%
-}
-.divHead{
-    width: 94%;
-    background-color: rgb(196, 126, 103);
-    height: 4%;
-    align-content: center;
-    padding-left: 6%;
-    color: rgb(209, 209, 209);
-
-}
-#divPicture{
-    margin: 6%;
-}
-#divProfileContent{
-    margin: 6%;
-
-}
-#divSkillsContent{
-    margin:6%;
-}
-progress{
-    width: 100%;
-    height: 1vh;
-    margin-top: 5%;
-    border-radius: 0%;
-}
-progress::-webkit-progress-bar{
-    background: rgb(196, 126, 103) ;
-
-}
-progress::-webkit-progress-value{
-    background: white;
-}
 
 @media(max-width: 767px){
 
@@ -81,8 +84,13 @@ progress::-webkit-progress-value{
         width: 100%;
         height: auto;
         color: aliceblue;  
-        position: relative;
     }
+    main{
+        overflow-y: none;
+        width: 87%;
+        padding: 2%; 
+    }
+    
     h1{
         
         font-size: 32px;
