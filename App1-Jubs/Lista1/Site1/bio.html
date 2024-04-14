@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Biografia da Jubs</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+        
+    <body> 
+        <div id="home"> 
+            <header>
+                <strong class="tamanho">SITE BIOGRÁFICO</strong>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li>|</li>
+                        <li><a href="#bio">Biografia</a></li>
+                        <li>|</li>
+                        <li><a href="#escolaridade">Escolaridade</a></li>
+                        <li>|</li>
+                        <li><a href="#pf">Planos Futuros</a></li>
+                    </ul>
+                </nav>
+            </header> 
+        </div>
+
+        <div id="bio">
+            <header>BIOGRAFIA</header>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Nome completo:</h3>
+                            Julia Gomes Serra
+                        <h3>Vida:</h3>
+                        <p> Nasci no dia <strong>10 de maio de 2008</strong>, 
+                            às 20h16 no hospital de Guarulhos-SP, cidade que morei até 
+                            meus 06 anos quando me mudei para Arealva-SP em 2014. Meus 
+                            pais decidiram vir para a cidade natal de minha mãe pois minha 
+                            avó estava, supostamente, nos seus últimos momentos, mas felizmente 
+                            ela se recuperou e viveu por mais alguns anos.<br>
+                        </p>
+                        <p>
+                            Descobri o CTI e decidi que queria estudar aqui quando estava
+                            no oitavo ano, desde aquele momento até o final do nono eu 
+                            pensava em como iria ser se eu passasse e deixasse aquela vida
+                            para trás.<br>
+                            Acontece que eu <strong>quase</strong> não passo, mas não me surpreenderia se isso tivesse acontecido, eu nao estudei em momento algum e fui realmente apenas com meus <em>conhecimentos gerais.</em>
+                        </p>
+                        </td>
+                        <td>
+                            <img src="img/eu.jpg" width="200px">
+                            <p align="center">(Sou eu... sério.)</p>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+
+        <div id="escolaridade">
+            <header>ESCOLARIDADE</header>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Maternal:</h3>
+                            Concluído em EPG Ver. Svaa Evans Vereador, Guarulhos-SP.
+                        <h3>Ensino Fundamental I:</h3>
+                            Concluído em EMEF José Abílio Ferreira Prestes Prefeito, Arealva-SP.
+                        <h3>Ensino Fundamental II:</h3>
+                            Concluído em E.E Professor Sebaastião Inoc Assumpção, Arealva-SP.
+                        <h3>Ensino Médio:</h3>
+                            Cursando em Colégio Técnico Industrial CTI-Unesp, Bauru-SP.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="pf">
+            <header>PLANOS FUTUROS</header>
+            <table border="0" width="100%" align="center">
+                <tr>
+                    <td>
+                        <h2>Faculdade:</h2> 
+                            <strong>Instituto de Biociências da Universidade de São Paulo|USP</strong>
+                                <p>
+                                    Penso em fazer Bacharelado <strong>e</strong> licenciatura em 
+                                    zoologia na USP para poder trabalhar com o que gosto de fato, 
+                                    que são os animais. 
+                                    Até me formar quero poder trabalhar com a programação, pois é algo que gosto 
+                                    e sei que abre diversas portas para quem sabe aproveitar as oportunidades fornecidas.
+                                </p> 
+                    </td>
+                    <td>
+                        <img src="img/bio.jpg">
+                    </td>
+                </tr>
+                <tr id="metas">
+                    <td>
+                        <h2>Metas:</h2>
+                        <ul>
+                            <li>
+                                Aprender libras.
+                            </li>
+                            <li>
+                                Viajar para lugares como Canadá, Coréia, Japão, Europa, etc.                         
+                            </li>
+                            <li>
+                                Visitar a cidade natal do meu pai.
+                            </li>
+                            <li>
+                                Visitar o túmulo do meu padrinho em Monte Azul-SP
+                            </li>
+                            <li>
+                                Aprender a gostar de comida japonesa.
+                            </li>
+                            <li>
+                                Trabalhar com o que amo e ter contato com inúmeras espécies de animais.
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="img/libras.png">
+                        <img src="img/viagem.jpg">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
+    </body>
+</html>

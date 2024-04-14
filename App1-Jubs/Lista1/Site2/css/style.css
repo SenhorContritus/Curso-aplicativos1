@@ -1,0 +1,89 @@
+body
+{
+    background-image: url(../../Site2/img/fundo.jpg);
+}
+
+.wrapper{
+    background-color: rgb(255, 241, 223);
+    width: 90%;
+    margin: 5% auto;
+    border: 2px solid black;
+}
+
+.cabeçalho
+{
+    text-align: center;
+    color: rgb(89, 50, 0);
+    background-color: rgb(254, 217, 168);
+    position: relative;
+    padding-bottom: 30px;
+    
+}
+
+nav{
+    background-color: rgb(255, 228, 192);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul{
+    padding: 10px 0px 10px 25px;
+}
+
+a{
+    color:  rgb(89, 50, 0);;
+    text-decoration: none;
+}
+
+a:hover, a.current{
+    color: white;
+    text-decoration: underline;
+}
+
+.tamanho{
+    font-size: 100px;
+}
+
+main{
+    width: 90%;
+    margin-left: 10px;
+    float: left;
+    background-color: rgb(255, 241, 223);
+}
+
+main article{
+    overflow: auto;
+    margin: 20px auto;
+    margin-bottom: 30px;
+}
+
+main figure{
+    float: left;
+    margin-right: 15px;
+}
+
+main figcaption{
+    font-size: 12px;
+}
+
+article p, h2, ul, ol, li{
+    margin-left: 30px;
+    overflow: auto;
+}
+
+main header{
+    margin: 20px auto;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(254, 217, 168);
+    clear: both;
+}

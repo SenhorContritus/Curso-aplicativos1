@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cinzel', sans-serif;
+    background-color: rgb(249, 255, 131);
+}
+
+header{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    background-color: #29533D;
+    background-image: url("img/tog.jpg");
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-bottom: 50px;
+   
+}
+header p, h1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 0px;
+    color: white;
+    justify-content: space-between;
+    s
+}
+section{
+    display: flex;
+    flex-wrap: wrap
+    margin: 0px;
+    padding: 0px;
+}
+div p{
+    padding: 20px;
+    flex-wrap: wrap;
+}
+section img{
+    opacity: 1;
+    display: flex;
+    width: 150px;
+}
+
+@media screen and (min-width: 768px){
+   section img{
+
+   }
+}
+
+@media screen and (max-width: 768px){
+    
+}
