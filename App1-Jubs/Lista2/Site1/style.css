@@ -9,6 +9,11 @@
         text-align: center;
     }
     aside{
+        grid-column: 1;
+        height: max-content;
+    }
+    aside{
+        grid-column: 1;
         height: max-content;
     }
 }
@@ -19,12 +24,21 @@
         background-color: rgb(255, 255, 255);
         display: grid;
         grid-template-columns: 20% calc(80% - 10px);
+        grid-template-rows: 1fr 1fr;
         column-gap: 10px;
     }
     header{
+        grid-row: 1;
         grid-column: span 2;
     }
     aside{
+        grid-row: 2;
+        grid-column: 1;
+        height: 100vh;
+    }
+    article{
+        grid-row: 2;
+        grid-column: 2;
         height: 100vh;
     }
 }
