@@ -158,7 +158,7 @@ main{
         height: auto;
         width: auto;
         overflow-y: visible;
-        padding: none;
+        padding: 0%;
     }
 
     h1{
