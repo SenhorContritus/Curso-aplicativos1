@@ -15,18 +15,7 @@ body h1{
 h1{
     font-size: 2rem;
 }
-section>img{
-    display: block;
-    position: relative; 
-}
-.textImg{
-    position: absolute;
-    bottom: auto;
-    left: 100%;
-    transform: translate(-20%, -50%);
-    z-index: 1;
-    color: white;
-}
+
 @media screen and (min-width: 768px){
     header{
         display: flex;
@@ -62,12 +51,12 @@ section>img{
         align-items: center;
         justify-content: center;
     }
-    section{
-        flex: 1 1 300px;
-    }
-    section>img{
-        max-width: 300px;
+    section img{
+        min-width: ;
 
+    section>img{
+        min-width: 300px;
+        display: block;
     }
 }
 
@@ -102,9 +91,10 @@ section>img{
     section{
         flex: 1 1 50%;
     }
-    section>img{
+    section img{
+        flex-wrap: wrap;
         padding: 10px;
         max-width: 100%;
-        min-width: 150px;
+        min-width: 80px;
     }
 }
