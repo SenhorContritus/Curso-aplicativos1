@@ -35,7 +35,7 @@ main{
 }
 .h3Aside{
     color: rgb(253, 237, 237);
-
+    padding-top: 2%;
 }
 .h4Aside{
     margin-top: 2%
@@ -44,7 +44,7 @@ main{
     width: 94%;
     background-color: rgb(196, 126, 103);
     height: 4%;
-    align-content: center;
+    vertical-align: baseline ;
     padding-left: 6%;
     color: rgb(209, 209, 209);
 
@@ -109,7 +109,7 @@ progress::-webkit-progress-value{
         width: 94%;
         background-color: rgb(196, 126, 103);
         height: 4%;
-        align-content: center;
+        align-items: center;
         padding-left: 6%;
         color: rgb(209, 209, 209);
 
