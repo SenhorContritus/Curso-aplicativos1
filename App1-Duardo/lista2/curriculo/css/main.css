@@ -22,22 +22,22 @@ main{
     width: 87%;
     padding: 2%;
 }
-h1{
+.h1Aside{
     
     font-size: 32px;
     color: aliceblue; 
     
 }
 
-h2{
+.h2Aside{
     color: rgb(53, 53, 53);
     font-size: 14px;
 }
-h3{
+.h3Aside{
     color: rgb(253, 237, 237);
 
 }
-h4{
+.h4Aside{
     margin-top: 2%
 }
 .divHead{
