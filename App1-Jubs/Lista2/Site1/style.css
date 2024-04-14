@@ -19,12 +19,19 @@
         background-color: rgb(255, 255, 255);
         display: grid;
         grid-template-columns: 20% calc(80% - 10px);
+        grid-row: 1fr 1fr;
         column-gap: 10px;
     }
     header{
         grid-column: span 2;
+        grid-row: 1;
     }
     aside{
+        grid-row: 2;
+        height: 100vh;
+    }
+    artcile{
+        grid-row: 2;
         height: 100vh;
     }
 }
