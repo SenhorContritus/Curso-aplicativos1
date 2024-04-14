@@ -9,12 +9,16 @@ body{
 }
 aside{
     background-color: darksalmon;
-    width: 13%;
-    height: 100%;
+    width: 18%;
+    height: 138%;
     color: aliceblue;  
 }
+section{
+    display: flex;
+    flex-direction: column;
+}
 main{
-    overflow-y: scroll;
+
     width: 87%;
     padding: 2%;
 }
