@@ -1,0 +1,23 @@
+*{
+    font-family: "Merriweather",serif;
+}
+h1{
+    font-family: "Satisfy",cursive;
+    
+}
+header{
+    background-color:  #a6e9d7;
+    
+}
+nav{
+    background-color:#bdeadb;
+}
+aside{
+    background-color:  #cdeadc;
+}
+main{
+    background-color: #d5e9d5;
+}
+footer{
+    background-color: rgb(176, 230, 216) ;
+}
