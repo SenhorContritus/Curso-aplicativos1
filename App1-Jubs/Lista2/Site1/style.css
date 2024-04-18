@@ -1,0 +1,96 @@
+@media screen and (max-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: inherit;
+        height: 100vh;
+    }
+    .left{
+        text-align: center;
+    }
+    aside{
+        height: max-content;
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 20% calc(80% - 10px);
+        grid-row: 1fr 1fr;
+        column-gap: 10px;
+    }
+    header{
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    aside{
+        grid-row: 2;
+        height: 100vh;
+    }
+    artcile{
+        grid-row: 2;
+        height: 100vh;
+    }
+}
+
+img{
+    width: 100%;
+    overflow: auto;
+}
+
+aside{
+  
+    float: left;
+    background-color: rgb(141, 232, 161);
+}
+
+header{
+    text-align: center;
+    background-color:rgb(88, 159, 104);
+}
+
+nav li{
+    display: inline;
+    margin-right: 30px;
+    
+}
+
+nav ul{
+    padding: 10px 0px 10px 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+td a{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    background-color:rgb(88, 159, 104);
+    color: rgb(255, 255, 255);
+}
+
+aside section{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+article h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#perfil{
+    margin-bottom: 5px;
+}
+.left{
+    text-align: center;
+}
+td{
+    align-items: center;
+}

@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cinzel', sans-serif;
+    background-color: rgb(249, 255, 131);
+}
+header{
+    background-color: #29533D;
+    background-image: url("img/tog.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+body h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        display: flex;
+        padding: 20px;
+        margin-top: 0px;
+        flex-wrap: wrap;
+
+        width: calc(100%-20px);
+        min-height: 250px;
+        height: max-content;
+
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    header p{
+        flex-wrap: wrap;
+        padding: 20px;
+        max-width: 40%;
+    }
+    article{
+        padding: 4.1%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    section img{
+        display: block;
+        flex-wrap: wrap;
+        padding: 10px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin-top: 0px;
+
+        width: calc(100%-20px);
+        min-height: 250px;
+        height: max-content;
+
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    section img{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        max-width: 100%;
+        min-width: 80px;
+    }
+}

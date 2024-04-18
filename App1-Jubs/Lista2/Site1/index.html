@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Currículo</title>
+        <meta charset="8-UTF">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>CURRÍCULO</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li>|</li>
+                    <li><a href="#formAcad">Formação acadamêmica</a></li>
+                    <li>|</li>
+                    <li><a href="#exp">Cursos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <section>
+                <h1>Julia Gomes Serra</h1>
+                <img src="img/eu.jpg">
+                Estudante   
+            </section>
+
+            <section id="perfil">
+                <hr>
+                <h2>Perfil</h2>
+                <hr>
+                <h3>Telefone</h3>
+                (14) 99111-2134<br>
+                <h3>E-mail</h3>
+                julia.g.serra@unesp.br<br>
+                julia.gomes.serra. jgs@gmail.com
+            </section>
+        </aside>
+
+        <article>
+            <section id="inicio">
+                <p>Estou cursando o 2º do médio integrado ao curso de Informática na instituição do CTI-Unesp e pretendo cursar Biologia em São paulo quando me formar.<br>
+                    Até terminar minha faculdade, espero poder utilizar a programação para me sustentar.
+                </p>
+            </section>
+            <section id="formAcad">
+                <hr>
+                <h2>Formação</h2>
+                <hr>
+                <table>
+                    <tr>
+                        <td class="left">2013</td>
+                        <td>
+                            Maternal:
+                            <ul>
+                                <li>Concluído em EPG Ver. Svaa Evans Vereador, Guarulhos-SP.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">2018</td>
+                        <td>
+                            Ensino Fundamental I:
+                            <ul>
+                                <li>Concluído em EMEF José Abílio Ferreira Prestes Prefeito, Arealva-SP.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">2022</td>
+                        <td>Ensino Fundamental II:
+                            <ul>
+                                <li>Concluído em E.E Professor Sebaastião Inoc Assumpção, Arealva-SP.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">2023 - atualmente</td>
+                        <td>
+                            Ensino Médio:
+                            <ul>
+                                <li>Cursando em Colégio Técnico Industrial CTI-Unesp, Bauru-SP.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="exp">
+                <hr>
+                <h2>Cursos</h2>
+                <hr>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://codeiot.org.br/certificates/7539ebe9518642aa9cc9e2b98d2aba8c" target="_blank">Aprendendo a programar</a><br>
+                            <a href="https://codeiot.org.br/certificates/492ae1cf75d44a17b0af33db3d85253a" target="_blank">Aplicativos para dispositivos móveis</a><br>
+                            <a href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?S4S2Jy7JIqHvvjHmEUvN624Rf25AUKZU" target="_blank">Modelagem de dados</a><br>
+                            <a href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?S4S2Jy7JIqGtxn4gBNqN9kTSlfEp%2bjrq" target="_blank">Introdução à programação orientada a objetos(POO)</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
+    </body>
+</html>
