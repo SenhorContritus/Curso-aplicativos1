@@ -1,0 +1,184 @@
+/* Widescreen: */
+@media (min-width: 768px){
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 1fr 60px;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        gap: 0px;
+    }
+
+/* INICIO HEADER */
+    header{
+        position: fixed;
+        
+        height: auto;
+        width: 100%;
+        background-color: pink;
+        grid-column: 1;
+        grid-row: 1;
+
+        display: flex;
+        justify-content: space-around;
+    }
+        .navTopo{ /*ta certo isso?*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navTopo li{
+            display: inline;
+            margin-left: 30px;
+        }
+
+        .icones{
+            
+        }
+/* FIM HEADER */
+
+/* INICIO MAIN */
+    main{
+        grid-column: 1;
+        grid-row: 2;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+        gap: 0px;
+    }
+/* ================================================================================ */
+        section img{
+            width: 200px;
+        }
+        
+        #home{
+            width: 100%;
+            background-image: url("/App1-Jubs/Ecommerce/img/pencils-452238_640.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+            grid-column: 1;
+            grid-row: 1;
+
+            display: flex;
+        }
+            #textHome{
+                color: white;
+                max-width:500px;
+                margin-left: 10%;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+
+        #sobre{
+            background-color: rosybrown;
+            grid-column: 1;
+            grid-row: 2;
+
+        }
+            #sobre h1{
+                margin-top: 5%;
+                margin-bottom: 5%;
+                text-align: center; 
+                background-color: white;   
+            }
+
+            .imgSobre{
+                width: 25%;
+                float: left;
+                margin-bottom: 5%;
+                margin-right: 30px;
+            }
+           
+            #textSobre{/* arrumar o wrap do texto */    
+                margin-left: 7%;
+                margin-right: 7%;  
+            }
+
+/* ================================================================================ */
+
+        #brCursos{
+            background-color: pink;
+            grid-column: 1;
+            grid-row: 3;
+
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 5%;
+            margin-right: 5%;
+          
+            height: auto;
+
+            justify-content: center;
+            align-items: center;
+        }
+            #brCursos section{
+                background-color: aliceblue;
+                max-width: 80%;
+                margin-bottom: 5%;
+
+            }
+            #brCursos h1{
+                margin-top: 5%;
+                color: white;
+                background-color: palevioletred;
+                min-width: 100%;
+                text-align: center;
+                
+            }
+            #brCursos img{
+                min-width: 100%;
+                text-align: center;
+            }
+
+/* ================================================================================ */
+
+        #brPers{
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+/* ================================================================================ */
+
+        #avaliacoes{
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+/* ================================================================================ */
+
+        #contato{
+            grid-column: 1;
+            grid-row: 6;
+        }
+
+/* ================================================================================ */
+
+        #links{
+            grid-column: 1;
+            grid-row: 7;
+        }
+    /* FINAL MAIN */
+
+    footer{
+        grid-column: 1;
+        grid-row: 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Tablet: */
+@media (min-width: 425px) and (max-width: 768px){
+
+}
+
+/* Mobile: */
+@media (max-width: 425px){
+
+}

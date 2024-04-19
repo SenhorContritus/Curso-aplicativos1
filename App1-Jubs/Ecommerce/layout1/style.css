@@ -1,0 +1,98 @@
+/* Widescreen: */
+@media (min-width: 768px){
+    body{
+        display: grid;
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-rows: 60px 1fr 1fr;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        gap: 30px;
+    }
+
+
+    header{
+        grid-column: 1/6;
+        grid-row: 1;
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #menuBroches{
+        grid-column: 2/5;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: calc(70% - 10px) 30%;
+        grid-template-rows: calc(50% 50% -10px);
+        gap: 10px;
+    }
+        #slider{
+            background-color: yellowgreen;
+            grid-row: 1/3;
+            grid-column: 1;
+        }
+
+
+        #brCurso{
+            background-color: violet;
+            grid-row: 1;
+            grid-column: 2;
+        }
+        #brPerso{
+            background-color: tomato;
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+
+    #menuProdutos{
+        background-color: sienna;
+        grid-row: 3;
+        grid-column: 2/5;
+        margin-bottom: 7px;
+
+
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+        .produto{
+            background-color: teal;
+            column-gap: 10px;
+            max-width: 20%;
+            flex-wrap: wrap;
+        }
+
+
+        .produto img{
+            display: inline-block;
+            vertical-align: top;
+            max-width: auto;
+            margin: 7px;
+        }
+
+
+        .produto p{
+            display: inline-block;
+            vertical-align: bottom;
+            max-width: auto;
+        }
+
+
+}
+
+
+/* Tablet: */
+@media (min-width: 425px) and (max-width: 768px){
+
+
+}
+
+
+/* Mobile: */
+@media (max-width: 425px){
+
+
+}
