@@ -16,10 +16,10 @@ aside .cabecalhoAside{
     color: #e9d1f8 ;
     border-bottom: solid #7d37a8 2px;
 }
-aside .produtosAside h3{
-    padding-bottom: 10%;
+aside #produtosAside h3{
+    color: #a042da ;
 }
-aside .produtosAside p{
+aside #produtosAside p{
     padding-bottom: 10%;
 }
 main{
