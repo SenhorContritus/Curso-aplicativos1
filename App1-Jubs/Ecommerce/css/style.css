@@ -119,11 +119,8 @@ body i:hover{
 /* ================================================================================ */
     main #home{
             width: 100%;
-            /* background-image: url("/App1-Jubs/Ecommerce/img/pencils-452238_640.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%; */
 
-            background-color: palevioletred;
+           background-color:rgb(88, 159, 104);
 
             grid-column: 1;
             grid-row: 1;
@@ -145,7 +142,7 @@ body i:hover{
 
         }
         main #sobre h1{
-                background-color: rgb(255, 180, 205);
+            background-color: rgb(141, 232, 161);
                 margin-top: 5%;
                 margin-bottom: 5%;
                 text-align: center;
@@ -197,7 +194,7 @@ body i:hover{
             main #brCursos h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
 
@@ -241,7 +238,7 @@ body i:hover{
             main #brPers h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
             }
@@ -287,7 +284,7 @@ body i:hover{
             main #avaliacoes h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
 
@@ -436,7 +433,7 @@ body i:hover{
 /* ================================================================================ */
         main #home{
             width: 100%;
-            background-color: palevioletred;
+            background-color:rgb(88, 159, 104);
 
             grid-column: 1;
             grid-row: 1;
@@ -458,7 +455,7 @@ body i:hover{
 
         }
             #sobre h1{
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 margin-top: 5%;
                 margin-bottom: 5%;
                 text-align: center;
@@ -472,7 +469,7 @@ body i:hover{
                 margin-right: 30px;
             }
 
-            #textSobre{/* arrumar o wrap do texto */
+            #textSobre{
                 margin-left: 7%;
                 margin-right: 7%;
             }
@@ -510,7 +507,7 @@ body i:hover{
             #brCursos h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
 
@@ -553,7 +550,7 @@ body i:hover{
             #brPers h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
             }
@@ -599,7 +596,7 @@ body i:hover{
             #avaliacoes h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
 
@@ -744,11 +741,7 @@ body i:hover{
 /* ================================================================================ */
         main #home{
             width: 100%;
-            /* background-image: url("/App1-Jubs/Ecommerce/img/pencils-452238_640.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%; */
-
-            background-color: palevioletred;
+            background-color:rgb(88, 159, 104);
 
             grid-column: 1;
             grid-row: 1;
@@ -770,7 +763,7 @@ body i:hover{
 
         }
             #sobre h1{
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 margin-top: 5%;
                 margin-bottom: 5%;
                 text-align: center;
@@ -822,7 +815,7 @@ body i:hover{
             #brCursos h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
 
@@ -865,7 +858,7 @@ body i:hover{
             #brPers h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
             }
@@ -911,7 +904,7 @@ body i:hover{
             #avaliacoes h1{
                 margin-top: 5%;
                 color: white;
-                background-color: rgb(255, 180, 205);
+                background-color: rgb(141, 232, 161);
                 min-width: 100%;
                 text-align: center;
 
