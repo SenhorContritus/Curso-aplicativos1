@@ -9,7 +9,7 @@ body a{
 }
 body a:hover{
     text-decoration: underline;
-    color: palevioletred;
+    background-color: rgb(169, 238, 184);
 }
 
 body{
@@ -27,6 +27,9 @@ body i:hover{
     color: palevioletred;
 }
 
+*>header .navTopo .icons i:hover{
+    color: rgb(111, 189, 128);
+}
 /* Widescreen: */
 @media (min-width: 768px){
     body{
@@ -81,7 +84,7 @@ body i:hover{
             color: white;
         }
         .navTopo ul li .menu li a:hover{
-            background-color: rgb(255, 184, 208);
+            background-color: rgb(141, 232, 161);
  
             color: white;
             display: block;
@@ -98,7 +101,7 @@ body i:hover{
 
         .navTopo ul li:hover .menu{
             display: block;
-            background-color:rgb(227, 167, 167);
+            background-color: rgb(169, 238, 184);
         }
         .navTopo ul .menu li a{
             display: block;
@@ -395,7 +398,7 @@ body i:hover{
             color: white;
         }
         .navTopo ul li .menu li a:hover{
-            background-color: rgb(255, 184, 208);
+            background-color: rgb(141, 232, 161);
 
             color: white;
             display: block;
@@ -412,7 +415,7 @@ body i:hover{
 
         .navTopo ul li:hover .menu{
             display: block;
-            background-color:rgb(227, 167, 167);
+            background-color: rgb(169, 238, 184);
         }
         .navTopo ul .menu li a{
             display: block;
@@ -704,7 +707,7 @@ body i:hover{
             color: white;
         }
         .navTopo ul li .menu li a:hover{
-            background-color: rgb(255, 184, 208);
+            background-color: rgb(141, 232, 161);
 
             color: white;
             display: block;
@@ -721,7 +724,7 @@ body i:hover{
 
         .navTopo ul li:hover .menu{
             display: block;
-            background-color:rgb(227, 167, 167);
+            background-color: rgb(169, 238, 184);
         }
         .navTopo ul .menu li a{
             display: block;
