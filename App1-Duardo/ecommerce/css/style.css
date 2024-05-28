@@ -15,16 +15,25 @@ aside{
 aside .cabecalhoAside{
     color: #e9d1f8 ;
     border-bottom: solid #7d37a8 2px;
+    
+}
+aside #produtosAside{
+    border-bottom: solid #7d37a8 2px;
 }
 aside #produtosAside h3{
-    color: #a042da ;
+    color: #b87ddd ;
 }
 aside #produtosAside p{
-    padding-bottom: 10%;
+    margin-left: 12%;
+    color: #b461e7 ;
 }
 main{
     background-color: aliceblue;
 }
+main .produtos{
+    background-color: #d1b2e9;
+}
+
 footer{
     background-color:#61417a ;
 }
