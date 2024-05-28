@@ -44,7 +44,10 @@ main{
     flex-wrap: wrap;
     padding: 5%;
     overflow-y: scroll;
+<<<<<<< HEAD
     justify-content: center;
+=======
+>>>>>>> a04cf45b651bfa613704e1f3baa787e4fe792096
 }
 main .produtos{
     width: auto;
