@@ -1,39 +1,27 @@
-*{
-    font-family: "Merriweather",serif;
+body{
+
 }
 header{
-    background-color: #29025e;
 
 }
-header h1{
-    color:  rgb(255, 255, 255);
+nav{
 
 }
-aside{
-    background-color: #5d0892;
+nav a{
+
 }
-aside .cabecalhoAside{
-    color: #e9d1f8 ;
-    border-bottom: solid #7d37a8 2px;
-    
-}
-aside #produtosAside{
-    border-bottom: solid #7d37a8 2px;
-}
-aside #produtosAside h3{
-    color: #b87ddd ;
-}
-aside #produtosAside p{
-    margin-left: 12%;
-    color: #b461e7 ;
+section{
+
 }
 main{
-    background-color: aliceblue;
-}
-main .produtos{
-    background-color: #d1b2e9;
-}
 
+}
+main aside{
+
+}
+main article {
+
+}
 footer{
-    background-color:#61417a ;
+
 }
