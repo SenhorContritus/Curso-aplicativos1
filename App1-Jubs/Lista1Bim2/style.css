@@ -50,7 +50,7 @@ body{
     grid-row-end: 2;
 }
     #btTran1{
-        background-color: #90bcfe;
+        background-color: #90bcfe; 
         transition: background-color 0.5s ease-in-out;
         margin-top: 40px;
         border: none;

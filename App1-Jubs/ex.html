@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+        div{
+            position: absolute;
+            width: 10%;
+            height: 10%;
+        }
+        .vermelho{
+            background-color: red;
+            top: 0%;
+            left: calc(50% - (10%/2));
+        }
+        .vermelho:hover ~ .azulpreta{
+            background-color: black;
+        }
+
+        .laranja{
+            background-color: orange;
+            top: 90%;
+            left: calc(50% - (10%/2));
+        }
+        .laranja:active ~ .azulpreta{
+            animation-play-state: paused;
+        }
+        
+        .azulpreta{
+            background-color: blue;
+            top: 0%;
+            left: 0%;
+            animation: x 5s linear infinite;
+            transition: all 1s;
+        }
+        @keyframes x{
+            0%{
+                top: 0%;
+                left: 0%;
+            }
+            25%{
+                top: 90%;
+                left: 90%;
+            }
+            50%{
+                top: 0%;
+                left: 90%;
+            }
+            75%{
+                top: 90%;
+                left: 0%;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="vermelho"></div>
+    <div class="laranja"></div>
+    <div class="azulpreta"></div>
+</body>
+</html>
