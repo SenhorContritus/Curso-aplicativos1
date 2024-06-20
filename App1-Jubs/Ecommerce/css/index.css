@@ -6,13 +6,14 @@ body{
     padding: 0px;
     gap: 0px;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-family: 'Newsreader';
 
 
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr 60px;
-}
+    background-color:rgb(229, 255, 174);
     body ul{
         list-style-type: none;
         padding: 0px;
@@ -20,15 +21,13 @@ body{
 
     body a{
         text-decoration: none;
-        color: gray;
     }
     body a:hover{
-        text-decoration: underline;
-        background-color: rgb(169, 238, 184);
+        cursor: pointer;
     }
 
     body i:hover{
-        color: palevioletred;
+        cursor: pointer;
     }
 
 header{
@@ -37,22 +36,24 @@ header{
     height: 50px;
     width: 100%;
     box-shadow: 2px 2px 10px gray;
-    background-color: aliceblue;
+    background-color:rgb(187, 217, 122);
     grid-column: 1;
     grid-row: 1;
+    padding: 0px;
 }
     *>header .navTopo .icons i:hover{
         color: rgb(111, 189, 128);
     }
     .navTopo ul{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+        margin-left: 2%;
+        margin-right: 4%;
     }
-    .navTopo ul li{
+    .navTopo ul li {
         display: inline;
         position: relative;
-      
+        margin-left: 0px;
     }
     .icons{
         width: auto;
@@ -99,52 +100,41 @@ header{
 main{
     grid-column: 1;
     grid-row: 2;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
     gap: 0px;
 }
     main #home{
-        width: 100%;
-
-        background-color:rgb(88, 159, 104);
-
         grid-column: 1;
         grid-row: 1;
 
         display: flex;
     }
         main #textHome{
-            color: white;
+            color: rgb(186, 186, 186);
             margin-left: 10%;
             margin-top: 10%;
             margin-bottom: 10%;
         }
-    main #sobre{
-        grid-column: 1;
-        grid-row: 2;
-
-    }
-        main #sobre h1{
-            background-color: rgb(141, 232, 161);
-            margin-top: 5%;
-            margin-bottom: 5%;
-            text-align: center;
-
+        main #textHome h1{
+            color: rgb(27, 65, 9);
+            font-size: 300%;
+            margin: 0px;
         }
-        main .imgSobre{
-            float: left;
-            margin-bottom: 5%;
-            margin-right: 30px;
-        }
-        main #textSobre{
-            margin-left: 7%;
-            margin-right: 7%;
+        main #imgHome{
+            color: white;
+            background-color: white;
+            width: 100%;
         }
     main #velas{
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
         align-items: center;
 
         display: flex;
@@ -152,95 +142,80 @@ main{
         margin-left: auto;
         margin-right: auto;
 
-        background-color: aliceblue;
-
-        width:80%;
+        width:auto;
         height: auto;
 
         justify-content: space-between;
         align-items: center;
     }
         main #velas section{
-            box-shadow: 2px 2px 10px gray;
             margin-bottom: 5%;
             margin-left: auto;
             margin-right: auto;
+            
         }
         main #velas h1{
-            margin-top: 5%;
-            color: white;
-            background-color: rgb(141, 232, 161);
+            color: rgb(0, 0, 0);
             min-width: 100%;
-            text-align: center;
+            text-align: left;
 
         }
         main #velas img{
             width: 100%;
             max-width: 100%;
             text-align: center;
-        }
-    main #avaliacoes{
-        grid-column: 1;
-        grid-row: 4;
-        background-color: rgb(252, 252, 252);
-
-
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-
-
-        width:80%;
-        height: auto;
-
-        justify-content: space-between;
-        align-items: center;
-    }
-        main #avaliacoes section{
-            box-shadow: 2px 2px 10px gray;
-            background-color: aliceblue;
-            margin-bottom: 5%;
-            margin-left: auto;
-            margin-right: auto;
-            
             border-radius: 10px;
         }
-        main #avaliacoes h1{
-            margin-top: 5%;
-            color: white;
-            background-color: rgb(141, 232, 161);
-            min-width: 100%;
-            text-align: center;
-
-        }
-        main #avaliacoes p{
-            margin-left: 20px;
-        }
-        main #avaliacoes img{
-            width: 20%;
-            text-align: center;
-            border-radius: 10px;
-        }
-    main #links{
+    main #sobre{
         grid-column: 1;
-        grid-row: 5;
-
-        border-radius: 10px;
-        padding: 10px;
-
-        box-shadow: 0px 5px 10px gray;
+        grid-row: 3;
     }
+        main #sobre {
+            justify-content: center;
+        }
 
 footer{
     grid-column: 1;
     grid-row: 3;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
 
+   
+}
+    footer #efemero{
+        grid-column: 1/3;
+        grid-row: 1;
+        background-color:rgb(187, 217, 122);
+    }
+    footer #contato{
+        grid-column: 3;
+        grid-row: 1; 
+        background-color:rgb(187, 217, 122);
+    }
+        footer #contato p{
+        margin-left: 5%;
+        color: gray;
+    }
+    footer a{
+        text-decoration: none;
+        color: grey;
+    }
+    footer li{
+        list-style-type: none;
+    }
+    footer #sobre h1{
+        font-size: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer #textSobre{ 
+        text-align: center;
+    }
 /* Widescreen: */
 @media (min-width: 768px){
     main #textHome{
@@ -274,12 +249,8 @@ footer{
         grid-auto-rows: auto;
     }
 
-        main #linkRap{
-            grid-column: 1;
-            grid-row: 1;
-        }
-        main #linkExt{
-            grid-column: 2;
+        main #efemero{
+            grid-column: 1/3;
             grid-row: 1;
         }
         main #contato{
@@ -379,4 +350,5 @@ footer{
             grid-column: 1;
             grid-row: 3;
         }
+    }
 }
