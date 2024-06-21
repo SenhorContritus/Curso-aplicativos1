@@ -13,23 +13,24 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Festum</title>
+        
     </head>
     <body>
         <header>
             <div id="titleDiv">
-                <img src="./images/" alt="icon festum" >
-                <p id="title"></p>
+                <img src="./images/" onclick="mudarTela(document.getElementById('main'), 'main')" alt="icon festum" >
             </div>
         </header>
         <nav>
-            <a href="http://"  id="aboutLink">Sobre</a>
-            <a href="http://"  id="loginLink">Login</a>
-            <a href="http://"  id="registerLink">Registro</a>
+            <a  onclick="mudarTela(document.getElementById('sobre'), 'sobre')" id="aboutLink">Sobre</a>
+            <a  onclick="mudarTela(document.getElementById('login'), 'login')" id="loginLink">Login</a>
+            <a  onclick="mudarTela(document.getElementById('registro'), 'registro')"  id="registerLink">Registro</a>
+            <a  onclick="mudarTela(document.getElementById('carrinho'), 'carrinho')"  id="carrinhoLink">Carrinho</a>
         </nav>
         <section>
-            <img src="./images/" alt="Imagem do Produto">
+            <img src="./images/sec.jpg" style="width: 80%;" alt="Imagem do Produto">
         </section>
-        <main>
+        <main id="main">
             <aside>
                 aside
             </aside>
@@ -37,9 +38,52 @@
                 article
             </article>
         </main>
+        <main id="sobre">
+            <h2 style="color: gray;">Sobre</h2><br>
+            <p style="color: rgb(110, 109, 109);">&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt rem quaerat laudantium magni molestias, ducimus sint aut atque totam earum perferendis distinctio sapiente? Quaerat, suscipit! Illum voluptatibus dolores tempora?</p>
+        </main>
+        <main id="login">
+            <h2 style="color: gray;">Login</h2>
+            <div>
+                <form action="" method="post">
+                    <input type="text" placeholder="Nome de usuário">
+                    <input type="password" placeholder="Senha">
+                    <input type="checkbox" name="" id="checkPass">
+                    <br>
+                    <br>
+                    <button style="width: 40%; height: 20%; color: rgb(56, 56, 56);background-color: rgb(24, 24, 24); border: none;" type="submit">Login</button>
+                </form>
+            </div>
+        </main>
+        <main id="registro">
+            <h2 style="color: gray;">Registro</h2>
+            <div>
+                <form action="" method="post">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Nome de usuário">
+                    <input type="password" placeholder="Senha">
+                    <input type="checkbox" name="" id="checkPass">
+                    <br>
+                    <br>
+                    <button style="width: 40%; height: 20%; color: rgb(56, 56, 56);background-color: rgb(24, 24, 24); border: none;" type="submit">registro</button>
+                </form>
+            </div>
+        </main>
+        <main id="carrinho">
+            <h2 style="color: grey;">Carrinho</h2>
+            <div>
+                <img src="/images/" style="width: 80%;" alt="Produto">
+                <p>Kit Festa - Festum</p>
+                <p>Preço R$<span id="Preço">0,00</span></p>
+                <button id="btnAdd"><img src="a" alt="add"></button>
+                <button id="btnRemove"><img src="a" alt="rem"></button>
+                <p>Quantidade: <span id="qntProduto">0</span></p>
+            </div>
+        </main>
         <footer>
             <p id="a">Todos os direitos contritais reservados</p>
         </footer>
+        <script src="./js/index.js"></script>
     </body>
 
 </html>
