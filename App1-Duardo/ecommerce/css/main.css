@@ -42,19 +42,19 @@
         font-size: 1.4vw;
         height: 80%;
         text-align: center;
-        padding-top: 0.5vh;
+        padding-top: 0.9vh;
         margin-left: 0.5%;
         margin-right: 0.5%;
         /*Style*/
         background-color: rgb(24, 24, 24);
-        color: rgb(56, 56, 56);
+        color: #81013f;
         border-radius: 3px;
         text-decoration: none;
         
     }
     nav a:hover{
-        color: rgb(129, 129, 129);
-        background-color:rgb(43, 42, 42) ;
+        color: #f00b79;
+        background-color:rgb(32, 32, 32) ;
     }
     section{
         width: 100%;
@@ -95,6 +95,8 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
+        color: #ade0e1;
+        
         
     }
     #registro{
@@ -112,6 +114,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
+        color: #ade0e1; 
         
     }
     #carrinho{
@@ -129,7 +132,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
-        color: gray;
+        color: #ade0e1;
     }
     #carrinho button{
         width: 20%;
@@ -144,12 +147,12 @@
         border: none;
         border-bottom: 1px solid rgb(82, 81, 81);
         outline: none;
-        color: rgb(70, 69, 69);
+        color: #8fb9b9; 
         
     }
     div input:hover{
         border-bottom: 1px solid rgb(168, 166, 166);
-        color: gray;
+        color: #ade0e1; ;
     }
     div #checkPass{
         width: auto;
@@ -224,13 +227,13 @@
         margin-right: 0.5%;
         /*Style*/
         background-color: rgb(24, 24, 24);
-        color: rgb(56, 56, 56);
+        color: #81013f;
         border-radius: 3px;
         text-decoration: none;
         
     }
     nav a:hover{
-        color: rgb(129, 129, 129);
+        color:#f00b79;
         background-color:rgb(43, 42, 42) ;
     }
     section{
@@ -272,6 +275,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
+        color: #ade0e1;
         
     }
     #registro{
@@ -289,6 +293,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
+        color: #ade0e1;
         
     }
     #carrinho{
@@ -307,7 +312,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
-        color: gray;
+        color: #ade0e1;
     }
     #carrinho button{
         width: 20%;
@@ -403,13 +408,13 @@
         margin-right: 0.5%;
         /*Style*/
         background-color: rgb(24, 24, 24);
-        color: rgb(56, 56, 56);
+        color: #81013f;
         border-radius: 3px;
         text-decoration: none;
         
     }
     nav a:hover{
-        color: rgb(129, 129, 129);
+        color: #f00b79;
         background-color:rgb(43, 42, 42) ;
     }
     section{
@@ -452,6 +457,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
+        color: #ade0e1;
         
     }
     #registro{
@@ -469,6 +475,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
+        color: #ade0e1;
         
     }
     #carrinho{
@@ -486,7 +493,7 @@
     
         /*Style*/
         background-color: rgb(36, 36, 36);
-        color: gray;
+        color: #ade0e1;
     }
     #carrinho button{
         width: 20%;
