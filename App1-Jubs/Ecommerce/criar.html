@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efêmero - Criar conta</title>
-    <link rel="stylesheet" href="Criar.css">
+    <link rel="stylesheet" href="css/criar.css">
     <link href='https://fonts.googleapis.com/css?family=Newsreader' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/abf8c89fd5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <h2>BEM VINDO, CRIE SUA CONTA</h2>
+        <nav class="navTopo">
+            <ul>
+                <li>
+                    <a href="index.html"><strong>EFÊMERO</strong></a>
+                </li>
+
+                <li>
+                    <ul class="icons">
+                        <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="login.html"><i class="fa-solid fa-user"></a></i></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <div class="img-container">    
-    </div>
-    <div class="registro">
+    
+    <main class="registro">
         <form action="#" method="POST">
             <div class="Dados">
+                <label><h1>SEJA BEM-VINDO!</h1><br>Criar conta<br></label>
                 <label for="fullname">Nome Completo</label>
                 <input type="text" id="fullname" name="fullname" required>
             </div>
@@ -36,9 +51,10 @@
         </form>
         <div class="opc-login">
             <p>Já possui uma conta?</p>
-            <a href="Login.html">Voltar para o Login</a>
+            <a href="login.html">Voltar para o Login</a>
         </div>
-    </div>
+    </main>
+
     <footer>
         <ul>
             <li><a href="#">Política de Privacidade</a></li>
