@@ -1,0 +1,113 @@
+body{
+    text-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    background-color: rgb(246, 215, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+   
+    padding: 15px;
+    width: 230px;
+    height: auto;
+    background-color: rgb(240, 114, 175);
+    color: aliceblue;
+    border-radius: 15px;
+}
+    .calculadora button{
+        border-radius: 10px;
+        background-color: rgb(255, 158, 205);
+        width: 50px;
+        height: 50px;
+        color: aliceblue;
+        border: 0px;
+        transition: all 0.1s;
+        font-weight: bold;
+    }
+        .calculadora button:hover{
+            color: rgb(240, 114, 175);
+            background-color: rgb(227, 240, 252);
+        }
+        .calculadora .AC{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .calculadora .C{
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .calculadora .barra{
+            grid-column: 3;
+            grid-row: 1;
+        }
+        .calculadora .vezes{
+            grid-column: 4;
+            grid-row: 1;
+        }
+        .calculadora .sete{
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .calculadora .oito{
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .calculadora .nove{
+            grid-column: 3;
+            grid-row: 2;
+        }
+        .calculadora .menos{
+            grid-column: 4;
+            grid-row: 2;
+        }
+        .calculadora .quatro{
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .calculadora .cinco{
+            grid-column: 2;
+            grid-row: 3;
+        }
+        .calculadora .seis{
+            grid-column: 3;
+            grid-row: 3;
+        }
+        .calculadora .mais{
+            grid-column: 4;
+            grid-row: 3;
+        }
+        .calculadora .um{
+            grid-column: 1;
+            grid-row: 4;
+        }
+        .calculadora .dois{
+            grid-column: 2;
+            grid-row: 4;
+        }
+        .calculadora .tres{
+            grid-column: 3;
+            grid-row: 4;
+        }
+        .calculadora .igual{
+            grid-column: 4;
+            grid-row: 4/6;
+            height: 100%;
+        }
+        .calculadora .zero{
+            width: 100%;
+            grid-column: 1/3;
+            grid-row: 5;
+        }
+        .calculadora .ponto{
+            grid-column: 3;
+            grid-row: 5;
+        }
