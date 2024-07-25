@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora da jubs</title>
+    <!-- css -->
+     <style>
+        .calculadora{
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(5, auto);
+
+            margin-top: 20%;
+            margin-left: 20%;
+            margin-right: 20%;
+            width: 60%;
+        }
+     </style>
+</head>
+<body>
+    <div class="calculadora">
+        <button on click="digitacao(%)">%</button>
+        <button on click="digitacao(CE)">CE</button>
+        <button on click="digitacao(C)">C</button>
+        <button on click="digitacao(AC)">AC</button>
+
+        <button on click="digitacao(7)">7</button>
+        <button on click="digitacao(8)">8</button>
+        <button on click="digitacao(9)">9</button>
+        <button on click="digitacao(/)">/</button>
+
+        <button on click="digitacao(4)">4</button>
+        <button on click="digitacao(5)">5</button>
+        <button on click="digitacao(6)">6</button>
+        <button on click="digitacao(*)">*</button>
+
+        <button on click="digitacao(1)">1</button>
+        <button on click="digitacao(2)">2</button>
+        <button on click="digitacao(3)">3</button>
+        <button on click="digitacao(-)">-</button>
+
+        <button on click="digitacao(0)">0</button>
+        <button on click="digitacao(.)">.</button>
+        <button on click="digitacao(=)">=</button>
+        <button on click="digitacao(+)">+</button>
+    </div>
+</body>
+</html>
