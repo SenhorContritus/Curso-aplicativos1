@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora da jubs</title>
     <link rel="stylesheet" href="css/index.css">
@@ -10,31 +11,63 @@
     <div class="calculadora">
             <p id="resultado"></p>
             
-            <button class="AC" on click="ac()">AC</button>
-            <button class="C" on click="c(1)">C</button>
-            <button class="barra" on click="insert('/')">/</button>
-            <button class="vezes" on click="insert('*')">*</button>
+            <button class="AC" onclick="allClean()">AC</button>
+            <button class="C" onclick="clean()">C</button>
+            <button class="barra" onclick="insert('/')">/</button>
+            <button class="vezes" onclick="insert('*')">*</button>
 
-            <button class="sete" on click="insert('7')">7</button>
-            <button class="oito" on click="insert('8')">8</button>
-            <button class="nove" on click="insert('9')">9</button>
-            <button class="menos" on click="insert('-')">-</button>
+            <button class="sete" onclick="insert('7')">7</button>
+            <button class="oito" onclick="insert('8')">8</button>
+            <button class="nove" onclick="insert('9')">9</button>
+            <button class="menos" onclick="insert('-')">-</button>
 
-            <button class="quatro" on click="insert('4')">4</button>
-            <button class="cinco" on click="insert('5')">5</button>
-            <button class="seis" on click="insert('6')">6</button>
-            <button class="mais" on click="insert('+')">+</button>
+            <button class="quatro" onclick="insert('4')">4</button>
+            <button class="cinco" onclick="insert('5')">5</button>
+            <button class="seis" onclick="insert('6')">6</button>
+            <button class="mais" onclick="insert('+')">+</button>
 
-            <button class="um" on click="insert('1')">1</button>
-            <button class="dois" on click="insert('2')">2</button>
-            <button class="tres" on click="insert('3')">3</button>
-            <button class="igual" on click="igual()">=</button>
+            <button class="um" onclick="insert('1')">1</button>
+            <button class="dois" onclick="insert('2')">2</button>
+            <button class="tres" onclick="insert('3')">3</button>
+            <button class="igual" onclick="equal()">=</button>
 
-            <button class="zero" on click="insert('0')">0</button>
-            <button class="ponto" on click="insert('.')">.</button>
+            <button class="zero" onclick="insert('0')">0</button>
+            <button class="ponto" onclick="insert('.')">.</button>
     </div>
     
-    <script src="./js/index.js"></script>
+    <script>
+        let numero = 0;
+        let ultimaOp;
+        let memoria = 0;
+        let resultado = 0;
+        function insert(num){
+            numero = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = numero + num;
+            if(num == '+'){
+                document.getElementById('resultado').innerHTML = "";
+            }
+        }
+        function allClean(){
+            memoria = 0;
+            document.getElementById('resultado').innerHTML = "";
+        }
+        function clean(){
+            resultado = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+        }
+
+        function equal(){
+            resultado = document.getElementById('resultado').innerHTML;
+            if(resultado){
+                document.getElementById('resultado').innerHTML = eval(resultado);
+                memoria = resultado;
+            }
+            else{
+                resultado = document.getElementById('resultado').innerHTML = "";
+            }
+            
+        }
+    </script>
 
 </body>
 </html>
