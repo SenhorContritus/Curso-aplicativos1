@@ -41,11 +41,11 @@
         let memoria = 0;
         let resultado = 0;
         function insert(num){
+            if(num == "+" || num == "-" || num == "*" || num == "/"){
+                
+            }
             numero = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = numero + num;
-            if(num == '+'){
-                document.getElementById('resultado').innerHTML = "";
-            }
         }
         function allClean(){
             memoria = 0;
