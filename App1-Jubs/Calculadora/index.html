@@ -16,58 +16,26 @@
             <button class="barra" onclick="insert('/')">/</button>
             <button class="vezes" onclick="insert('*')">*</button>
 
-            <button class="sete" onclick="insert('7')">7</button>
-            <button class="oito" onclick="insert('8')">8</button>
-            <button class="nove" onclick="insert('9')">9</button>
+            <button class="sete" onclick="insert(7)">7</button>
+            <button class="oito" onclick="insert(8)">8</button>
+            <button class="nove" onclick="insert(9)">9</button>
             <button class="menos" onclick="insert('-')">-</button>
 
-            <button class="quatro" onclick="insert('4')">4</button>
-            <button class="cinco" onclick="insert('5')">5</button>
-            <button class="seis" onclick="insert('6')">6</button>
+            <button class="quatro" onclick="insert(4)">4</button>
+            <button class="cinco" onclick="insert(5)">5</button>
+            <button class="seis" onclick="insert(6)">6</button>
             <button class="mais" onclick="insert('+')">+</button>
 
-            <button class="um" onclick="insert('1')">1</button>
-            <button class="dois" onclick="insert('2')">2</button>
-            <button class="tres" onclick="insert('3')">3</button>
+            <button class="um" onclick="insert(1)">1</button>
+            <button class="dois" onclick="insert(2)">2</button>
+            <button class="tres" onclick="insert(3)">3</button>
             <button class="igual" onclick="equal()">=</button>
 
-            <button class="zero" onclick="insert('0')">0</button>
+            <button class="zero" onclick="insert(0)">0</button>
             <button class="ponto" onclick="insert('.')">.</button>
     </div>
     
-    <script>
-        let numero = 0;
-        let ultimaOp;
-        let memoria = 0;
-        let resultado = 0;
-        function insert(num){
-            if(num == "+" || num == "-" || num == "*" || num == "/"){
-                
-            }
-            numero = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = numero + num;
-        }
-        function allClean(){
-            memoria = 0;
-            document.getElementById('resultado').innerHTML = "";
-        }
-        function clean(){
-            resultado = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
-        }
-
-        function equal(){
-            resultado = document.getElementById('resultado').innerHTML;
-            if(resultado){
-                document.getElementById('resultado').innerHTML = eval(resultado);
-                memoria = resultado;
-            }
-            else{
-                resultado = document.getElementById('resultado').innerHTML = "";
-            }
-            
-        }
-    </script>
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
