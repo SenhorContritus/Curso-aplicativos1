@@ -8,31 +8,35 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="calculadora">
+    <h1>CALCULADORA DA JUBS</h1>
+    <h3>Número máximo de digitos comportados = 13</h3>
+    <div class="calc">
+        <div class="calculadora">
             <p id="resultado"></p>
             
-            <button class="AC" onclick="allClean()">AC</button>
+            <button class="AC" onclick="allClean(1)">AC</button>
             <button class="C" onclick="clean()">C</button>
             <button class="barra" onclick="insert('/')">/</button>
             <button class="vezes" onclick="insert('*')">*</button>
 
-            <button class="sete" onclick="insert(7)">7</button>
-            <button class="oito" onclick="insert(8)">8</button>
-            <button class="nove" onclick="insert(9)">9</button>
+            <button class="sete" onclick="insert('7')">7</button>
+            <button class="oito" onclick="insert('8')">8</button>
+            <button class="nove" onclick="insert('9')">9</button>
             <button class="menos" onclick="insert('-')">-</button>
 
-            <button class="quatro" onclick="insert(4)">4</button>
-            <button class="cinco" onclick="insert(5)">5</button>
-            <button class="seis" onclick="insert(6)">6</button>
+            <button class="quatro" onclick="insert('4')">4</button>
+            <button class="cinco" onclick="insert('5')">5</button>
+            <button class="seis" onclick="insert('6')">6</button>
             <button class="mais" onclick="insert('+')">+</button>
 
-            <button class="um" onclick="insert(1)">1</button>
-            <button class="dois" onclick="insert(2)">2</button>
-            <button class="tres" onclick="insert(3)">3</button>
+            <button class="um" onclick="insert('1')">1</button>
+            <button class="dois" onclick="insert('2')">2</button>
+            <button class="tres" onclick="insert('3')">3</button>
             <button class="igual" onclick="equal()">=</button>
 
             <button class="zero" onclick="insert(0)">0</button>
             <button class="ponto" onclick="insert('.')">.</button>
+        </div>  
     </div>
     
     <script src="./js/index.js"></script>
