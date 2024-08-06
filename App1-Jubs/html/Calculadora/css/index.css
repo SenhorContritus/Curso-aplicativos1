@@ -1,24 +1,65 @@
 body{
-    text-wrap: wrap;
     width: 100%;
     height: 100vh;
     margin: 0px;
     padding: 0px;
     gap: 0px;
     background-color: rgb(246, 215, 250);
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+}
+h1{
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    background-color: rgb(255, 158, 205);
+    color: aliceblue;
+}
+
+h3{
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0px;  
+    margin-bottom: 0px;
+    height: 40px;
+
+    background-color: rgb(255, 158, 205);
+    color: aliceblue;
+}
+.calc{
+    grid-row: 3;
+    grid-column: 1;
+    
+    margin-top: 0px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .calculadora{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
     gap: 5px;
+    left: 200px;
    
     padding: 15px;
-    width: 230px;
-    height: auto;
+    width: 220px;
+    height: 316px;
     background-color: rgb(240, 114, 175);
     color: aliceblue;
     border-radius: 15px;
@@ -32,82 +73,99 @@ body{
         border: 0px;
         transition: all 0.1s;
         font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
     }
         .calculadora button:hover{
             color: rgb(240, 114, 175);
             background-color: rgb(227, 240, 252);
         }
+        .calculadora #resultado{
+            grid-column: 1/5;
+            grid-row: 1;
+            color: black;
+            background-color: aliceblue;
+            width: 96%;
+            height: 36px;
+            font-size: 30px;
+            padding: 3px;
+            border-radius: 10px;
+            margin: 0%;
+            text-align: right;
+            overflow: hidden;
+        }
         .calculadora .AC{
             grid-column: 1;
-            grid-row: 1;
+            grid-row: 2;
         }
         .calculadora .C{
             grid-column: 2;
-            grid-row: 1;
+            grid-row: 2;
         }
         .calculadora .barra{
             grid-column: 3;
-            grid-row: 1;
+            grid-row: 2;
         }
         .calculadora .vezes{
             grid-column: 4;
-            grid-row: 1;
+            grid-row: 2;
         }
         .calculadora .sete{
             grid-column: 1;
-            grid-row: 2;
+            grid-row: 3;
         }
         .calculadora .oito{
             grid-column: 2;
-            grid-row: 2;
+            grid-row: 3;
         }
         .calculadora .nove{
             grid-column: 3;
-            grid-row: 2;
+            grid-row: 3;
         }
         .calculadora .menos{
             grid-column: 4;
-            grid-row: 2;
+            grid-row: 3;
         }
         .calculadora .quatro{
             grid-column: 1;
-            grid-row: 3;
+            grid-row: 4;
         }
         .calculadora .cinco{
             grid-column: 2;
-            grid-row: 3;
+            grid-row: 4;
         }
         .calculadora .seis{
             grid-column: 3;
-            grid-row: 3;
+            grid-row:4;
         }
         .calculadora .mais{
             grid-column: 4;
-            grid-row: 3;
+            grid-row:4;
         }
         .calculadora .um{
             grid-column: 1;
-            grid-row: 4;
+            grid-row: 5;
         }
         .calculadora .dois{
             grid-column: 2;
-            grid-row: 4;
+            grid-row: 5;
         }
         .calculadora .tres{
             grid-column: 3;
-            grid-row: 4;
+            grid-row: 5;
         }
         .calculadora .igual{
             grid-column: 4;
-            grid-row: 4/6;
+            grid-row: 5/7;
             height: 100%;
         }
         .calculadora .zero{
             width: 100%;
             grid-column: 1/3;
-            grid-row: 5;
+            grid-row: 6;
         }
         .calculadora .ponto{
             grid-column: 3;
-            grid-row: 5;
+            grid-row: 6;
         }
