@@ -54,20 +54,3 @@ echo"
 
     }
 ?>
-
-$varSQL = "SELECT * FROM nmBD WHERE (valorBD operação :parametronosso(oq quermos))"
-
-$select = $conn ->prepare($varSQL);
-$select -> bindParam(":parametro", $variavelParametro);
-$seletc ->execute();
-
-while($linha = $select->fetch()){
-
-}
-
-$varSQL = "SELECT valorEspecificoBD FROM nmBD";
-$select = $conn->query($varSQL);
-$select -> execute();
-
-$varSQL = "INSERT INTO nomeDB (valorBD, valor1, valor2, valor3) VALUES (valorquero, valorquero1, valorquero2, valorquero3)";
-$insert = 

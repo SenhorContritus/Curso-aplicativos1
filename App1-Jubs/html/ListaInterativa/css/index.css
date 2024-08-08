@@ -1,0 +1,80 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    background-color: rgb(226, 203, 255);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+}
+
+header{
+    grid-column: 1;
+    grid-row: 1;
+    height: auto;
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(226, 114, 255);
+    text-align: center;
+}
+.lista{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8% 6% 54%;
+    gap: 1%;
+    left: 200px;
+    margin-left: 35%;
+    margin-top: 2%;
+   
+    padding: 15px;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(226, 114, 255);
+    color: aliceblue;
+    border-radius: 15px;
+}
+    .lista input{
+        grid-column: 1;
+        grid-row: 1;
+        height: auto;
+        border: 0px;
+        border-radius: 10px;
+    }
+
+    .lista button{
+        grid-column: 1;
+        grid-row: 2;
+        border-radius: 10px;
+        background-color: rgb(238, 177, 255);
+        width: 100%;
+        height: auto;
+        color: aliceblue;
+        border: 0px;
+        transition: all 0.1s;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+    }
+        .lista button:hover{
+            color: rgb(238, 177, 255);
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+    .lista #view{
+        grid-column: 1;
+        grid-row: 3;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, auto);
+    }
+        .lista #view > *{
+            grid-row: auto;
+            grid-column: 1fr;
+        }
+        
