@@ -129,7 +129,7 @@ header{
                 background-color: #fff;
                 padding: 20px;
                 border-radius: 8px;
-                box-shadow: 0 0 10px rgb(0, 0, 0);
+                box-shadow: 0 0 6px 1px rgb(130, 130, 130);
 
                 display: grid;
                 grid-template-columns: 1fr;
