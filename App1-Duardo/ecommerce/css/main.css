@@ -10,10 +10,13 @@ article{
     grid-gap: 5%;
     justify-content: center;
 }
-nav a {
+button{
     border: 1px solid #81013f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-nav a:hover{
+button:hover{
     border: 1px solid #f00b79;
 }
 .produto{
@@ -69,7 +72,7 @@ nav a:hover{
         border-bottom-left-radius: 1vh;
         border-bottom-right-radius: 1vh;
     }
-    nav a{
+    nav button{
         width: 7.825%;
         font-size: 1.4vw;
         height: 80%;
@@ -84,7 +87,7 @@ nav a:hover{
         text-decoration: none;
         
     }
-    nav a:hover{
+    nav button:hover{
         color: #f00b79;
         background-color:rgb(32, 32, 32) ;
     }
@@ -249,7 +252,7 @@ nav a:hover{
         border-bottom-left-radius: 1vh;
         border-bottom-right-radius: 1vh;
     }
-    nav a{
+    nav button{
         font-size: 1.7vw;
         width: 7.825%;
         height: 80%;
@@ -264,7 +267,7 @@ nav a:hover{
         text-decoration: none;
         
     }
-    nav a:hover{
+    nav button:hover{
         color:#f00b79;
         background-color:rgb(43, 42, 42) ;
     }
@@ -430,10 +433,10 @@ nav a:hover{
         border-bottom-left-radius: 1vh;
         border-bottom-right-radius: 1vh;
     }
-    nav a{
+    nav button{
         font-size: 3vw;
         width: 14.825%;
-        height: 80%;
+        height: 60%;
         text-align: center;
         padding-top: 0.5vh;
         margin-left: 0.5%;
@@ -445,7 +448,7 @@ nav a:hover{
         text-decoration: none;
         
     }
-    nav a:hover{
+    nav button:hover{
         color: #f00b79;
         background-color:rgb(43, 42, 42) ;
     }
