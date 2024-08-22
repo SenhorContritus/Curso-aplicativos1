@@ -114,6 +114,8 @@ header{
             grid-row: 2;
             grid-column: 1;
 
+            padding: 2%;
+
             display: grid;
             grid-template-rows: repeat(2, auto);
             grid-template-columns: 1fr;
@@ -123,7 +125,7 @@ header{
                 grid-row: 1;
                 grid-column: 1;
 
-                width: 96%;
+                width: auto;
                 height: auto;
 
                 background-color: #fff;

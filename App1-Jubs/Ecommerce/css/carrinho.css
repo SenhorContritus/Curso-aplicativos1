@@ -1,7 +1,7 @@
 body{
   text-wrap: wrap;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0px;
   padding: 0px;
   gap: 0px;
@@ -85,7 +85,7 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3,auto);
-  gap: 0px;
+  gap: 1%;
 }
   main .a1{
     grid-row: 1;
@@ -99,10 +99,9 @@ main{
     border-radius: 15px;
     grid-row: 2;
     grid-column: 1;
-    margin-bottom: 2%;
     padding: 2%;
   }
-  .compra button{
+  .compra .btcompra{
       width: 80%;
       height: 50px;
       margin-left: 10%;
@@ -122,34 +121,49 @@ main{
     grid-column: 1;
 
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, auto);
+
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
-    main .itens div{
+    main .itens .produto{
       padding: 2%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+
       grid-row: auto;
       grid-column: 1;
 
-      margin-bottom: 1%;
       border-radius: 15px;
-
       background-color: rgb(225, 248, 174);
-
       width: 96%;
     }
-      main .itens div img{
-        float: left;
-        grid-row: 1;
-        grid-column: 1;
-        
-        height: 20%;
+      main .produto img{
+        height: 100%;
+        float:left;
         border-radius: 15px;
       }
-      main .itens div p{
-        grid-row: 1;
-        grid-column: 2;
-        
+      main .produto .info{
+        display:grid;
+        grid-row: repeat(3, 1fr);
+        grid-column: 1fr;
+
+        height: 216px;
+        margin: 0px;
       }
+      main .produto .qntd{
+        width: auto;
+        grid-column: 1;
+        grid-row: 3;
+      }
+      main .produto .qntd button{
+        height: 19px;
+        width: 19px;
+        padding: 0px;
+        margin: 0px;
+      }
+
      footer{
         grid-row: 3;
         grid-column: 1;
@@ -175,12 +189,9 @@ main{
   main .a1{ 
     font-size: 36px;
   }
-  main .itens div{
+  main .produto{
     height: 216px;
   }
-    main .itens div img{
-      height: 20%;
-    }
   footer{
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -205,12 +216,9 @@ main{
   main .a1{ 
     font-size: 26px;
   }
-  main .itens div{
+  main .produto{
     height: 162px;
   }
-    main .itens div img{
-      height: 15%;
-    }
   footer{
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -235,12 +243,9 @@ main{
   main .a1{ 
     font-size: 20px;
   }
-  main .itens div{
+  main .produto{
     height: 54px;
   }
-    main .itens div img{
-      height: 5%;
-    }
   footer{
       display: grid;
       grid-template-columns:1fr;
