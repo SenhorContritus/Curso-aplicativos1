@@ -36,7 +36,7 @@ header{
 
     height: 50px;
     width: 100%;
-    background-color:rgb(225, 248, 174);
+    background-color:#cfe8b0;
     padding: 0px;
 }
     *>header .navTopo a:hover{
@@ -91,7 +91,7 @@ main{
         width: 100%;
         height: auto;
     
-        background-color:rgb(243, 255, 217);
+        background-color:#e9fcd1;
         box-shadow: 0px 0px 15px rgb(243, 255, 217);
         border-radius: 15px;
     }
@@ -167,6 +167,8 @@ main{
 footer{
     grid-column: 1;
     grid-row: 3;   
+    
+    background-color: #cfe8b0;
 }
     footer #contato p{
         margin-left: 2%;
@@ -227,12 +229,12 @@ footer{
         footer #efemero{
             grid-column: 1;
             grid-row: 1;
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
         footer #contato{
             grid-column: 2;
             grid-row: 1; 
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
 }
 
@@ -280,12 +282,12 @@ footer{
         footer #efemero{
             grid-column: 1;
             grid-row: 1;
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
         footer #contato{
             grid-column: 2;
             grid-row: 1; 
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
 }
 
@@ -333,12 +335,12 @@ footer{
         footer #efemero{
             grid-column: 1;
             grid-row: 1;
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
         footer #contato{
             grid-column: 1;
             grid-row: 2; 
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
             
 }

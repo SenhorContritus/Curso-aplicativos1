@@ -8,6 +8,7 @@ body{
     overflow: hidden;
 }
 main{
+    border-radius: 15px;
     width: 20%;
     height: 70%;
     background-color: rgb(244, 188, 255);
@@ -17,11 +18,15 @@ main{
     overflow-y: hidden; 
 }
 main p{
+    
+    border-radius: 15px;
     font-family: arial;
     font-size: 24px;
     text-align: center;
 }
 main input{
+    
+    border-radius: 15px;
     width: 80%;   
     height: 8%;
     margin-bottom: 2%; 

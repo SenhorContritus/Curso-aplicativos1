@@ -35,7 +35,7 @@ header{
 
     height: 50px;
     width: 100%;
-    background-color:rgb(225, 248, 174);
+    background-color:#cfe8b0;
     padding: 0px;
     z-index: 1;
 }
@@ -189,12 +189,12 @@ footer{
         footer #efemero{
             grid-column: 1;
             grid-row: 1;
-            background-color:rgb(225, 248, 174);
+            background-color:#cfe8b0;
         }
         footer #contato{
             grid-column: 2;
             grid-row: 1; 
-            background-color:rgb(225, 248, 174);
+            background-color:#cfe8b0;
         }
 }
 @media (min-width: 425px) and (max-width: 768px) {
@@ -208,12 +208,12 @@ footer{
         footer #efemero{
             grid-column: 1;
             grid-row: 1;
-            background-color:rgb(225, 248, 174);
+            background-color:#cfe8b0;
         }
         footer #contato{
             grid-column: 2;
             grid-row: 1; 
-            background-color:rgb(225, 248, 174);
+            background-color:#cfe8b0;
         }
 
 }
@@ -228,11 +228,11 @@ footer{
         footer #efemero{
             grid-column: 1;
             grid-row: 1;
-            background-color:rgb(225, 248, 174);
+            background-color:#cfe8b0;
         }
         footer #contato{
             grid-column: 1;
             grid-row: 2; 
-            background-color:rgb(225, 248, 174);
+            background-color:#cfe8b0;
         }
 }

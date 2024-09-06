@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Velha - Machado de Assis</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("img/fundo.jpg");
+            background-repeat: repeat;
+            background-size: 225px;
+        }
+        body>div{
+            background-color: aliceblue;
+            padding: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            width: 60%;
+            height: auto;
+        }
+        body> div p{
+            width: auto;
+            height: auto;
+        }
+        body>div button{
+            background-color: rgba(59, 219, 255, 0.399);
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            border-color: rgba(37, 70, 148, 0.458);
+            border-radius: 5px;
+        }
+
+        .hidden { 
+            display: none; 
+        }
+        .question { 
+            margin: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="question1" class="question">
+        <p>Você, como protagonista de uma história que se passa em meados do século XVII, deseja escrever um livro sobre a história do Brasil durante o primeiro reinado de D. Pedro I, em qual lugar deseja buscar informações?</p>
+        <br><button onclick="showQuestion('question2')">Biblioteca da cidade</button>
+        <button onclick="showQuestion('question3')">Casa de um ex-ministro com arquivos do reinado</button>
+    </div>
+
+    <div id="question2" class="question hidden">
+        <p>Fim de jogo, você encontra o necessário para escrever o livro.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question3" class="question hidden">
+        <p>Voce começa a frequentar os arquivos da casa e conhece o filho de Dona Antônia, dona da residência. Você gostaria de se tornar amigo(a) dele?</p>
+        <br><button onclick="showQuestion('question4')">Não</button>
+        <button onclick="showQuestion('question5')">Sim</button>
+    </div>
+
+    <div id="question4" class="question hidden">
+        <p>Fim de jogo, você apenas faz seu trabalho e vai embora assim que termina de recolher informações para escrever seu livro.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question5" class="question hidden">
+        <p>Agora que você é amigo de Félix, ambos possuem mais intimidade.<br>
+            Depois de conversar um pouco com Félix, você escuta sobre a chegada de visitantes da casa velha e você conhece Lalau. Indo cumprimentá-la vocês se tornam amigos também.
+            Em um dia, vendo que você havia se tornado próximo de seu filho, D. Antonia te pede um favor, levá-lo a Portugal como acompanhante na viagem q faria, o que você faz?</p>
+        <br><button onclick="showQuestion('question6')">Ignoro</button>
+        <button onclick="showQuestion('question7')">Aceito e converso com Félix sobre</button>
+    </div>
+
+    <div id="question6" class="question hidden">
+        <p>Fim de jogo, você a ignora e contina com seu trabalho.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question7" class="question hidden">
+        <p>Você descobre que na verdade ele e Lalau tinham um relacionamento secreto e que a mãe do rapaz não aprovava, por isso vivia tentando separá-los a qualquer custo para casá-la com outro homem. O que você fará com a informação?</p>
+        <br><button onclick="showQuestion('question8')">Contar para mãe de Félix</button>
+        <button onclick="showQuestion('question9')">Manter segredo</button>
+    </div>
+
+    <div id="question8" class="question hidden">
+        <p>Fim de jogo, voêe conta sobre o namoro secreto deles para Antonia e eles são separados por ela.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question9" class="question hidden">
+        <p>Você os apoia, ficando feliz pelos jovens, você decide guardar segredo.
+            Alguns dias depois, vendo sua proximidade do casal, ainda desconhecido pela casa, D. Antônia te procura para contar algo, você está disposto a ouvi-la?</p>
+        <br><button onclick="showQuestion('question10')">Não</button>
+        <button onclick="showQuestion('question11')">Sim</button>
+    </div>
+
+    <div id="question10" class="question hidden">
+        <p>Fim de jogo, você pede licença a ela para voltar aos seus afazeres e decide não se envolver nos relacionamentos da casa.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question11" class="question hidden">
+        <p>D. Antonia revela a você sobre uma possível traição do marido e diz que Lalau seria filha dele, por isso desejava separá-los a qualquer custo. O que você faz com tal informação?</p>
+        <br><button onclick="showQuestion('question12')">Descarto ela por desconfiança</button>
+        <button onclick="showQuestion('question13')">Acreditar nela</button>
+    </div>
+
+    <div id="question12" class="question hidden">
+        <p>Fim de jogo, você não confia no que a senhora diz, vendo que ela apenas queria separá-los por conta das diferenças socias entre os jovens, dessa forma ignorando a confissão e voltando ao trabalho.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question13" class="question hidden">
+        <p>Ao acreditar no que D. Antônia revela você decide falar aos jovens, como forma de poupar a vergonha da senhora.
+            Isso os deixa tristes e acanhados, separando-os da melhor forma para que não cometessem incesto.
+            Depois do diálogo, o que você decide fazer?</p>
+        <br><button onclick="showQuestion('question14')">Termino minhas pesquisas e vou embora</button>
+        <button onclick="showQuestion('question15')">Termino meu dia de pesquisas e vou embora para minha casa para depois poder voltar à residencia</button>
+    </div>
+
+    <div id="question14" class="question hidden">
+        <p>Fim de jogo, decido ir embora da casa para não me envolver mais nos assuntos particulares da propriedade e escrevo meu livro com base nos documentos que já havia achado.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question15" class="question hidden">
+        <p>Volto a casa pela manhâ do dia seguite com um clima pesado por conta das revelações, mas decide voltar à biblioteca para continuar suas pesquisas.
+            Em um dos livros que mexe enquanto busca mais detalhes, você encontra um papel, o que fará com ele?</p>
+        <br><button onclick="showQuestion('question16')">Devolvo de onde tirei</button>
+        <button onclick="showQuestion('question17')">Abro ele para ler o conteúdo</button>
+    </div>
+
+    <div id="question16" class="question hidden">
+        <p>Fim de jogo, você não revela tê-lo encontrado e volta aos documentos.</p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>
+    </div>
+
+    <div id="question17" class="question hidden">
+        <p>Você conta a eles, porém nenhum das reações eram o que você esperava, pois depois que se afastaram acabaram perdendo o amor ardente que nutriam por seu relacionamento. A traição é revelada para sinha, confirmando as suspeitas que ela continha. Com o tempo, você descobre que, assim como Antônia queria, os jovens foram separados, casado-se com pessoas da mesma hierarquia social.Infelizmente nn se sabe se foram felizes nos casamentos que tiveram, apenas de que não se relacionaram mais daquela forma que tinham.
+            <br><br>
+            Se você gostou do resumo da história e se interessou para saber os detalhes da narrativa, basta ler o aclamado livro "Casa Velha" de Machado de Assim, e se encante pela narrativa realista e com as diferentes perspectivas visuais e psicológicas de cada personagem da trama.
+            <br><br>
+            Fim da história.
+        </p>
+        <br><button onclick="showQuestion('question1')">Começar denovo</button>    
+    </div>
+
+    <script>
+        function showQuestion(id) {
+            document.querySelectorAll('.question').forEach(q => q.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

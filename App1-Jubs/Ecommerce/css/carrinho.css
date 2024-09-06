@@ -36,7 +36,7 @@ header{
 
   height: 50px;
   width: 100%;
-  background-color:rgb(225, 248, 174);
+  background-color: #cfe8b0;
   padding: 0px;
 }
   *>header .navTopo a:hover{
@@ -136,7 +136,7 @@ main{
       grid-column: 1;
 
       border-radius: 15px;
-      background-color: rgb(225, 248, 174);
+      background-color: #cfe8b0;
       width: 96%;
     }
       main .produto img{
@@ -176,12 +176,12 @@ main{
         footer #efemero{
             grid-column: 1;
             grid-row: 1;
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
         footer #contato{
             grid-column: 2;
             grid-row: 1; 
-            background-color:rgb(225, 248, 174);
+            background-color: #cfe8b0;
         }
 
 /* Widescreen: */
@@ -202,12 +202,12 @@ main{
       footer #efemero{
           grid-column: 1;
           grid-row: 1;
-          background-color:rgb(225, 248, 174);
+          background-color: #cfe8b0;
       }
       footer #contato{
           grid-column: 2;
           grid-row: 1; 
-          background-color:rgb(225, 248, 174);
+          background-color: #cfe8b0;
       }
 }
 
@@ -229,12 +229,12 @@ main{
       footer #efemero{
           grid-column: 1;
           grid-row: 1;
-          background-color:rgb(225, 248, 174);
+          background-color: #cfe8b0;
       }
       footer #contato{
           grid-column: 2;
           grid-row: 1; 
-          background-color:rgb(225, 248, 174);
+          background-color: #cfe8b0;
       }
 }
 
@@ -256,12 +256,12 @@ main{
       footer #efemero{
           grid-column: 1;
           grid-row: 1;
-          background-color:rgb(225, 248, 174);
+          background-color: #cfe8b0;
       }
       footer #contato{
           grid-column: 1;
           grid-row: 2; 
-          background-color:rgb(225, 248, 174);
+          background-color: #cfe8b0;
       }
           
 }
